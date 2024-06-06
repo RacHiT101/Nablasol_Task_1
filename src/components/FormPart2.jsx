@@ -42,7 +42,7 @@ const FormPart2 = ({ goBack, goNext }) => {
         className="rounded-lg shadow-gray shadow-xl p-4 w-full max-w-md"
       >
         <div className="pb-2">
-          <h2 className="text-xl font-semibold mb-4 flex justify-center">
+          <h2 className="text-xl font-semibold mb-1 flex justify-center">
             Project type
           </h2>
           <h5 className="text-sm text-slate-600 flex mb-4 justify-center">

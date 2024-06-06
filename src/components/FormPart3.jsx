@@ -19,7 +19,7 @@ const SelectView = ({ goBack, goNext }) => {
         className="rounded-lg shadow-gray shadow-xl p-6 w-full max-w-md bg-white"
       >
         <div className="pb-2">
-          <h2 className="text-xl font-semibold mb-4 flex justify-center">
+          <h2 className="text-xl font-semibold mb-1 flex justify-center">
             Select a view
           </h2>
           <h5 className="text-sm text-slate-600 flex mb-4 justify-center">
