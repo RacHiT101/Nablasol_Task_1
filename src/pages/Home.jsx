@@ -1,5 +1,6 @@
 // src/components/Home.js
 import { useState } from "react";
+import PaginationDots from "../components/PaginationDots";
 
 const Home = ({goNext }) => {
   const [projectName, setProjectName] = useState("");
@@ -14,6 +15,7 @@ const Home = ({goNext }) => {
     e.preventDefault();
     const projectDetails = { projectName, client, startDate, endDate, notes };
     console.log(projectDetails);
+    localStorage.setItem("projectDetails", JSON.stringify(projectDetails));
     goNext();
   };
 
@@ -139,6 +141,7 @@ const Home = ({goNext }) => {
               Next
             </button>
           </div>
+        <PaginationDots totalSteps={4} currentStep={0} />
         </form>
       </div>
     </>
